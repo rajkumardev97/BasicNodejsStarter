@@ -1,0 +1,51 @@
+{
+  "name": "earthmovingmsp",
+  "version": "1.0.0",
+  "description": "earthmovingmsp software",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Rajkumar",
+  "license": "ISC",
+  "dependencies": {
+    "base64-img": "^1.0.4",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^2.0.3",
+    "datauri": "^2.0.0",
+    "dateformat": "^3.0.3",
+    "express": "^4.16.4",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.1",
+    "gravatar": "^1.6.0",
+    "jsonwebtoken": "^8.3.0",
+    "moment": "^2.24.0",
+    "mongoose": "^5.3.6",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1",
+    "nodemailer": "^6.2.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "path": "^0.12.7",
+    "pdfkit": "^0.10.0",
+    "pdfmake": "^0.1.57",
+    "validator": "^10.8.0",
+    "written-number": "^0.9.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.18.4"
+  }
+}
